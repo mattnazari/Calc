@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Matthews Calculator</title>
+    <link rel="stylesheet" href="main.css"
+  </head>
+  <body>
+    <div class="cont">
+      <h1>Calculator</h1>
+      <div class="calc-wrap">
+        <input class="results" disabled />
+        <div class="buttons-cont">
+          <div class="butt-row">
+            <button
+              class="buttons seven"
+              value="7"
+              onclick="insertButtonValues(7)"
+            >
+              7
+            </button>
+            <button
+              class="buttons eight"
+              value="8"
+              onclick="insertButtonValues(8)"
+            >
+              8
+            </button>
+            <button
+              class="buttons nine"
+              value="9"
+              onclick="insertButtonValues(9)"
+            >
+              9
+            </button>
+          </div>
+
+          <div class="butt-row">
+            <button
+              class="buttons four"
+              value="4"
+              onclick="insertButtonValues(4)"
+            >
+              4
+            </button>
+            <button
+              class="buttons five"
+              value="5"
+              onclick="insertButtonValues(5)"
+            >
+              5
+            </button>
+            <button
+              class="buttons six"
+              value="6"
+              onclick="insertButtonValues(6)"
+            >
+              6
+            </button>
+          </div>
+
+          <div class="butt-row">
+            <button
+              class="buttons one"
+              value="1"
+              onclick="insertButtonValues(1)"
+            >
+              1
+            </button>
+            <button
+              class="buttons two"
+              value="2"
+              onclick="insertButtonValues(2)"
+            >
+              2
+            </button>
+            <button
+              class="buttons three"
+              value="3"
+              onclick="insertButtonValues(3)"
+            >
+              3
+            </button>
+          </div>
+
+          <div class="butt-row">
+            <button
+              class="buttons zero"
+              value="0"
+              onclick="insertButtonValues(0)"
+            >
+              0
+            </button>
+            <button
+              class="buttons plus"
+              value="+"
+              onclick="insertButtonValues('+')"
+            >
+              +
+            </button>
+            <button
+              class="buttons minus"
+              value="-"
+              onclick="insertButtonValues('-')"
+            >
+              -
+            </button>
+          </div>
+
+          <div class="butt-row">
+            <button
+              class="buttons multiply"
+              value="x"
+              onclick="insertButtonValues('*')"
+            >
+              &times;
+            </button>
+            <button
+              class="buttons plus"
+              value="/"
+              onclick="insertButtonValues('/')"
+            >
+              &divide;
+            </button>
+            <button
+              class="buttons decimal"
+              value="."
+              onclick="insertButtonValues('.')"
+            >
+              .
+            </button>
+          </div>
+
+          <div class="butt-row">
+            <button class="buttons equals" value="=" onclick="calculate()">
+              =
+            </button>
+            <button class="buttons back" value="back" onclick="back()">
+              Back
+            </button>
+            <button class="buttons clear" value="clear" onclick="clearResults()">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
